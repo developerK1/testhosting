@@ -35,7 +35,7 @@ ul {
   list-style: none;
 }
 .copyrightp {
-  background-color: #105E26;
+  background-color: #008B8B;
   height: 9vh;
   width : 100%;
   color :white;
@@ -78,13 +78,12 @@ a {
 }
 .populhead {
     box-shadow: 7px 8px 9px rgb(231 187 226 / 50%);
-    color: green;
+    color: #008b8b;
     text-align: center;
-    font-size: 44px;
+    font-size: 52px;
     letter-spacing: 2px;
     font-style: oblique;
     font-family: Assistant;
-    /* text-shadow: 7px 8px 9px #ddd4cd; */
 }
 .common-para {
   font-size: 18px;
@@ -147,13 +146,14 @@ h3 {
 }
 .about-head {
     text-align: left;
-    font-family: Assistant;
-    font-size: 49px;
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
     font-style: italic;
-    font-weight: bolder;
-    color: white;
-    text-shadow: 8px 2px 9px #137813;
-    background: rgb(0 0 0 / 2%);
+    color: #daa520;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-shadow: 8px 2px 9px #9e7a21b0;
+    background: rgb(0 0 0 / 5%);
     padding: 1%;
 }
 /* =======================================
@@ -163,7 +163,7 @@ h3 {
    width : 120px;
    border-radius: 5px;
    height: 40px;
-   background-color: #f9e472;
+   background-color: 	#B8860B;
    transition: all 0.5s ease-in-out;
  }
  .show-btn {
@@ -176,7 +176,7 @@ h3 {
      color: white;
  }
  #home-hero  button {
-     background-color: #ffe500;
+     background-color: #daa520;
      color: black;
      font-size: 22px;
      letter-spacing: 2px;
@@ -191,7 +191,7 @@ h3 {
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
-    background-color: #27912b;
+    background-color: #008B8B;
     color: white;
     z-index: 999;
     transition: all 0.5s ease-in;
@@ -662,7 +662,7 @@ header article ul li a:hover {
      transform: translate(-210px, -40px) scale(3) rotate(334deg);
  }
  .add-more:hover {
-   background-color: #28e32ebd;
+   background-color: #008B8B;
    letter-spacing: 2px;
  }
  .show-btn:hover {
@@ -679,4 +679,34 @@ header article ul li a:hover {
   100% {
       opacity: 1;
   }
+}
+
+
+
+
+.plaid-background {
+    background: repeating-linear-gradient(
+            -45deg,
+            transparent 0,
+            transparent 25%,
+            #008b8b 0,
+            #00008b 50%
+       ),
+       repeating-linear-gradient(
+            45deg,
+            transparent 0,
+            transparent 25%,
+            #b8860b 0,
+            #b8860b 50%
+        ),
+        repeating-linear-gradient(
+            transparent 0,
+            transparent 25%,
+            #daa520 0,
+            #daa520 50%
+        ), white;
+    background-blend-mode: multiply;
+    background-size: 100px 100px;
+    height: 20vh;
+    border-radius: 18px;
 }
