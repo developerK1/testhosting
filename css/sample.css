@@ -1,21 +1,23 @@
 
 
 
+
 /* =========================================
             HEADER SECTION
 ========================================== */
 header aside {
   width : 100%;
   height: 6vh;
-  background-color: #009933;
+  background-color: #008B8B;
   display :flex;
   justify-content: flex-end;
   align-items: center;
 }
 header article {
-  width : 100%;
-  min-height: 18vh;
-  display: flex;
+    width: 100%;
+    min-height: 18vh;
+    display: flex;
+    background: #daa52042;
 }
 header .social-links {
   margin-right: 100px;
@@ -63,7 +65,7 @@ header article ul li a {
 #home-hero {
   width : 100%;
   height: 92vh;
-  border-bottom: 5px solid #009933;
+  border-bottom: 5px solid #008B8B;
   margin: 0px 0px 10px 0px;
   position: relative;
   overflow: hidden;
@@ -78,7 +80,7 @@ header article ul li a {
   left: 0px;
   width : 100%;
   height: 100%;
-  background-color: #2dff3759;
+  background-color: #008b8b73;
 }
 #home-hero p {
   font-size : 42px;
@@ -147,42 +149,53 @@ header article ul li a {
   left: 0px;
 }
 #home-hero  .rounds {
-    background: #ffe86c73;
+    background: #daa5204f;
 }
 /* =========================================
             PURPOSE SECTION
 ========================================== */
 #purpose-benefit {
   padding: 5% 0%;
+  background-color: #daa52014;
 }
 #purpose-benefit aside div,
 #purpose-benefit article div  {
   padding-left : 8px;
 }
- #purpose-benefit .row div{
-   width: 100%;
-   min-height: 20vh;
-   margin: 20px;
- }
- #purpose-benefit h6 {
-   font-size: 26px;
-   font-weight: 300;
-   color : grey;
- }
-
+#purpose-benefit .row div {
+    width: 100%;
+    min-height: 20vh;
+    margin: 20px;
+    font-size: 18px;
+    font-family: Merriweather;
+}
+#purpose-benefit .row div p{
+    font-family: Merriweather;
+    color: #6a6a6a;
+    font-size: 17px;
+    font-weight: 400;
+}
+#purpose-benefit h6 {
+    color: #282828;
+    font-family: playfair display,Sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
  /* =========================================
              CATERGORY SECTION
  ========================================== */
  #catergories {
-     background-color: #f3f3f3;
+     background-color: #cfefecc4;
      padding: 3% 0%;
      min-height: 80vh;
      display: flex;
      align-items: center;
  }
  #catergories  h4 {
-   display: block;
-   color :#756408;
+     display: block;
+     color: #110f02;
+     font-family: Roboto;
+     font-size: 33px;
  }
   #catergories article .row {
     margin: 20px auto;
@@ -234,15 +247,21 @@ header article ul li a {
 #how-to-btn {
     height: 20vh;
     width: 100%;
-    background-image: repeating-linear-gradient(67deg, #336430, green 54%, black);
+    background-image: repeating-linear-gradient(67deg, #daa520, #000000 54%, #008b8b);
 }
-
 .portfolio .port-cont img:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
   cursor: zoom-in;
 }
-
+.portfolio .heading {
+    background-color: #ffffff63;
+    padding: 1%;
+    border-radius: 16px;
+    font-size: 62px;
+    color: #000000;
+    font-family: Roboto;
+}
 /* =========================================
             FAQS SECTION
 ========================================== */
@@ -269,7 +288,7 @@ header article ul li a {
   width : 100%;
   height: 62vh;
   padding: 2%;
-  background-color: #032603;
+  background-color: #cfefecc4;
 }
 .donate div {
   width : 100%;
@@ -338,7 +357,7 @@ header article ul li a {
 .articles h3{
     color: #333;
     font-family: poppins,Sans-serif;
-    font-size: 44px;
+    font-size: 84px;
     font-weight: 700;
     line-height: 1.2em;
     margin: 40px;
@@ -373,14 +392,16 @@ header article ul li a {
   padding: 3%;
   margin-top: 20px;
   min-height: 80vh;
-  background-color: #f3f3f3;
+  background-color: #daa52014;
   margin-bottom: 20px;
 }
 .form-adress h3 {
-   font-family: assistant, sans-serif;
    font-size: 42px;
    line-height: 3rem;
    letter-spacing: 2.3px;
+   color: #282828;
+  font-family: playfair display,Sans-serif;
+    font-weight: 700;
 }
 .form-adress .contact-form {
   padding: 2%;
@@ -396,14 +417,16 @@ header article ul li a {
   border : none;
   border-bottom: 2px solid #105E26;
   width : 100%;
-  background-color: #f3f3f3;
+  background-color: #daa52014;
 }
 .form-adress article .contact-form label {
     margin-right: 30px;
     font-size: 26px;
     font-style: oblique;
     line-height: initial;
-    color: #105E26;
+    color: #008b8b;
+    font-family: assistant,Sans-serif;
+    font-weight: 400;
 }
 .form-adress article .contact-form input:active,
 .form-adress article .contact-form input:focus,
@@ -413,7 +436,9 @@ header article ul li a {
   outline: none !important;
   border-bottom: 2px solid #105E26 !important;
 }
-
+.form-adress article form .btns{
+  margin: 20px auto;
+}
 /* =========================================
             IMAGES SECTION
 ========================================== */
@@ -435,6 +460,7 @@ footer .social-links img {
   height: 50px;
   margin: 8px;
   border-radius: 50%;
+  border : 5px solid #DAA520;
 }
 header nav article img {
   height: 120px;
@@ -457,6 +483,13 @@ header nav article img {
 .streched {
   width : 100%;
 }
+/*=========================================
+           DIVIDER CONTENTS
+========================================== */
+
+#divider-home {
+  height: 40vh;
+}
  =========================================
             FOOTER CONTENTS
 ========================================== */
@@ -467,7 +500,8 @@ footer .logo-social {
   width : 100%;
   justify-content: space-between;
   padding: 2% 0%;
-  border-bottom: 6px solid #105E26;
+  border-bottom: 6px solid #008b8b;
+  background-color: #00008b7a;
 }
 footer .social-links {
   justify-content: space-between;
@@ -520,7 +554,7 @@ footer h4 {
   text-align: left;
   width: 100%;
   margin : 35px 0px;
-  color :#105E26;
+  color :#B8860B;
 }
 footer .row aside{
   justify-content: space-around;
